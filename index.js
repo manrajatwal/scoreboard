@@ -10,7 +10,7 @@ function updateScore (team, points) { /* Updates score of a team by adding point
 
 function resetGame () { /* Resets score of both teams to 0 */
     document.getElementById ('home-score').textContent = 0;
-    document.getElementById('guest-score').textContent = 0;
+    document.getElementById('away-score').textContent = 0;
     document.getElementById('period').textContent = 1;
     document.getElementById('timer').textContent = "12:00";
     period = 1;
