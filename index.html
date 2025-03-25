@@ -1,0 +1,42 @@
+<!DOCTYPE html>   <!-- declare the document type as HTML5-->  
+<html lang="en"> <!-- specifies the language is English-->
+    <head> <!-- contains metadata about the document, such as its title, scripts, and styles-->
+        <meta charset="UTF-8"> <!-- specifies the character encoding for the HTML document-->
+        <meta name = "viewport" content = "width=device-width, iniital-scale=1.0"> <!-- sets the width of the page to follow the screen-width of the device (device-width) and sets the initial zoom level (initial-scale) to 1.0-->
+        <title>Scoreboard</title> <!-- sets the title of the web page (visible in the broswer tab)-->
+        <link rel="stylesheet" href="index.css"> <!--Links the HTML5 document to the CSS stylesheet-->
+        <link href="https://db.onlinewebfonts.com/c/ab0e848e0e83a85a5af69f5acf1ebe73?family=Cursed+Timer+ULiL" rel="stylesheet">
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "scoreboard">
+                <div class ="team"> <!-- Holds everything relate to the "Home" team-->
+                    <h1>HOME</h1> <!-- Displays the "Home" label-->
+                    <div class = "screen"> <!-- Respresents the black display panel-->
+                        <div class = "score" id = "home-score">0</div> <!-- Shows the score in Red-->
+                    </div>
+
+                    <div class = "buttons"> <!-- Contains the score increment buttons for the "Home" team-->
+                        <button class = "btn" onclick = "updateScore('home', 1)">+1</button> <!-- Adds 1 to the Home Team-->
+                        <button class = "btn" onclick = "updateScore('home', 2)">+2</button> <!-- Adds 2 to the Home Team-->
+                        <button class = "btn" onclick = "updateScore('home', 3)">+3</button> <!-- Adds 3 to the Home Team-->
+                    </div>  
+                </div>
+                <div class = "team"> <!-- Holds everything relate to the "GUEST" team-->
+                    <h1>GUEST</h1> <!-- Displays the "Guest" label-->
+                    <div class = "screen"> <!-- Respresents the black display panel-->
+                        <div class = "score" id = "guest-score">0</div> <!-- Shows the score in Red-->
+                    </div>
+                    <div class = "buttons"> <!-- Contains the score increment buttons for the "Guest" Team-->
+                        <button class = "btn" onclick = "updateScore('guest', 1)">+1</button> <!-- Adds 1 to the Guest Team-->
+                        <button class = "btn" onclick = "updateScore('guest', 2)">+2</button> <!-- Adds 2 to the Guest Team-->
+                        <button class = "btn" onclick = "updateScore('guest', 3)">+3</button> <!-- Adds 3 to the Guest Team-->
+                    </div>
+                </div>    
+            </div>
+            <div class="period-display">Period: <span id="period">1</span></div>
+            <div class="timer">Time Left: <span id="timer">12:00</span></div>
+            <button class = "reset-btn" onclick="resetGame()">Start New Game</button> <!-- Resets the game by setting the scores to 0-->
+        </div>
+        <script src="index.js"></script>
+    </body>

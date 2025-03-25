@@ -1,0 +1,81 @@
+body {
+    background-color: #1B244A; /*sets the background color of the page*/
+    color: #EEEEEE; /*sets the text color of the words in the body section of the page */
+    text-align: center; /*centers the text in the body section of the page */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /*sets the font style of the text in the body section of the page */
+}
+
+.container {
+    display: flex; /* tuns the container into a flexbox */
+    justify-content: center; /*centers the content of the container */
+    justify-content: column; /* centers the content of the container horizontally */
+    align-items: center; /*centers the items in the container vertically */
+    height: 100vh; /* ensure it takes the full height of the viewport */
+
+}
+
+.scoreboard {
+    display: flex; /*turns the scoreboard into a flexbox */
+    gap: 50px; /* Adds 50 pixel gap between "HOME" and "GUEST" sections. Gap is used to create space between the two items in the flexbox. gap only applies to spacking between flex items, avoiding extra spaces of edges.
+     This creates cleaner code without needed to add margins to every element or worry about margin collapsing behavior. */
+    margin-bottom: 10px; /*adds 20 pixels of margin to the bottom of the scoreboard */
+}
+
+.team {
+    text-align: center; /*centers the text in the team section of the scoreboard */
+    font-size: 36px; /*sets the font size of the text in the team section of the scoreboard to 36 pixels */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /*sets the font style of the text in the team section of the scoreboard */
+}
+
+.screen {
+    background-color: #080001; /*sets the background color of the screen section of the scoreboard */
+    padding: 40px 80px; /*adds 20 pixels of padding to the screen section of the scoreboard */
+    display: inline-block; /*displays the screen section of the scoreboard as an inline block */
+    border-radius: 10px; /*adds a 10 pixel border radius to the screen section of the scoreboard */
+    margin: 10px 200px; /*adds 10 pixels of margin to the top and bottom of the screen section of the scoreboard */
+}
+
+.score {
+    font-size: 120px; /*sets the font size of the score section of the scoreboard to 80 pixels */
+    color: #F94F6D; /*sets the color of the text in the scorebox to #F94F6D */
+    font-family: 'Cursed Timer ULiL'; /*sets the font family of the text in the scorebox to 'Courier New', Courier, monospace ! Will need to change ! */
+}
+
+ .buttons {
+    display: flex; /*turns the buttons section of the scoreboard into a flexbox */
+    gap: 10px; /*adds 10 pixels of gap between the buttons in the buttons section of the scoreboard */
+    justify-content: center; /*centers the content of the buttons section of the scoreboard */
+    margin-top: 10px; /*adds 10 pixels of margin to the top of the buttons section of the scoreboard */
+    
+ }
+
+.btn {
+    background-color: #1B244A; /*sets the background color of the button to none */
+    color: #9AABD8; /*sets the color of the text in the button to #9AABD8 */
+    border: solid 2px #9AABD8; /*sets the border of the button to a solid 2 pixel border with the color #9AABD8 */
+    font-size: 18px; /*sets the font size of the text in the button to 18 pixels */
+    padding: 10px 20px; /*adds 10 pixels of padding to the top and bottom of the button and 20 pixels of padding to the left and right of the button */
+    border-radius: 5px; /*adds a 5 pixel border radius to the button */
+    cursor: pointer;
+
+}
+
+.reset-btn {
+    background-color: #1B244A; /*sets the background color of the button to none */
+    color: #9AABD8; /*sets the color of the text in the button to #9AABD8 */
+    border: solid 2px #9AABD8; /*sets the border of the button to a solid 2 pixel border with the color #9AABD8 */
+    font-size: 18px; /*sets the font size of the text in the button to 18 pixels */
+    padding: 10px 20px; /*adds 10 pixels of padding to the top and bottom of the button and 20 pixels of padding to the left and right of the button */
+    border-radius: 5px; /*adds a 5 pixel border radius to the button */
+    cursor: pointer;
+}
+
+@font-face {
+        font-family: "Cursed Timer ULiL";
+        src: url("https://db.onlinewebfonts.com/t/ab0e848e0e83a85a5af69f5acf1ebe73.eot");
+        src: url("https://db.onlinewebfonts.com/t/ab0e848e0e83a85a5af69f5acf1ebe73.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/ab0e848e0e83a85a5af69f5acf1ebe73.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/ab0e848e0e83a85a5af69f5acf1ebe73.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/ab0e848e0e83a85a5af69f5acf1ebe73.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/ab0e848e0e83a85a5af69f5acf1ebe73.svg#Cursed Timer ULiL")format("svg");
+}
